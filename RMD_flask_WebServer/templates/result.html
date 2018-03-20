@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<script>
+		function alert_msg(message){
+			alert(message)
+		}
+		function backTopage(){
+			history.go(-1)();
+		}
+	</script>
+</head>
+<body>
+<body>	
+	
+	{% if status == "Success" %}
+	<script>
+		alert_msg("Success")
+		backTopage()
+	</script>
+	{% elif status=="No Session!" %}
+	<script>
+		alert_msg("No Session!")
+		backTopage()
+	</script>
+	{% elif status == "permession denied!" %}
+	<script>
+		alert_msg("permession denied!")
+		backTopage()
+	</script>
+	{% elif status == "Error!" %}
+	<script>
+		alert_msg("Error!")
+		backTopage()
+	</script>
+	{% elif status == "Member Delete Success!" %}
+	<script>
+		alert_msg("Member Delete Success!")
+		location.href="Member_list"
+	</script>
+	{% elif status == "Member Insert Success!" %}
+	<script>
+		alert_msg("Member Insert Success!")
+		location.href="Member_list"
+	</script>
+	{% else %}
+	<script>
+		alert_msg("Fail")
+		backTopage()
+	</script>
+	{% endif %}
+	
+</body>
+</body>
+</html>

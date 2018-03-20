@@ -1,0 +1,72 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/jeongnam/AndroidStudioProjects/RemoteDoorLock_version10/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "/home/jeongnam/J_DATA/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/8c0d8bfc28ec95f76238a681b1b77048/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "121",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "289"
+                    }
+                },
+                {
+                    "source": "/home/jeongnam/J_DATA/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/b8a743b54bf7fb27fa3f811926bc338a/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/jeongnam/J_DATA/AndroidStudioProjects/RemoteDoorLock_version10/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "/home/jeongnam/J_DATA/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/8c0d8bfc28ec95f76238a681b1b77048/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "121",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "289"
+                    }
+                },
+                {
+                    "source": "/home/jeongnam/J_DATA/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/b8a743b54bf7fb27fa3f811926bc338a/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                }
+            ]
+        }
+    ]
+}

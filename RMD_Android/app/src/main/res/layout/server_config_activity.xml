@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jeongnam.remotedoorlock_version10.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="50dp"
+        android:text="IP : "
+        android:id="@+id/TextView_IP"/>
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/TextView_IP"
+        android:layout_centerInParent="true"
+        android:id="@+id/edit_ip"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView_IP"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp"
+        android:text="Port : "
+        android:id="@+id/TextView_Port"/>
+    <EditText
+        android:id="@+id/edit_port"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/TextView_Port"
+        android:layout_below="@+id/TextView_IP"
+        android:layout_alignBottom="@id/TextView_Port"
+        />
+
+    <Button
+        android:id="@+id/IP_apply_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/edit_ip"
+        android:layout_alignBottom="@id/TextView_Port"
+        android:text="Apply"/>
+
+
+</RelativeLayout>

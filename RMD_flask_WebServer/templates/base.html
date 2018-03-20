@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% block head %}
+	<meta charset="UTF-8">
+	<title>{% block title %}{% endblock %}-RMD</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="{{url_for('static', filename='js/bootstrap.js')}}"></script>
+	<link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.css')}}">
+	{% endblock %}
+</head>
+<body>
+	{% block body %}
+	
+	{% block adminNav %}
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/">ReMote Door Lock</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+				<ul class="nav navbar-nav">
+					<li><a href="controllDoor">Door Controll</a></li>
+					<li><a href="Member_list">Member list(Admin)</a></li>
+					<li><a href="Logs_List">Logs(Admin)</a></li>
+					<li><a href="session_out">Log out</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<br>
+	<br>
+	<br>
+	<br>
+	{% endblock %}
+
+
+
+	{% block Login %}
+	<div class="container">
+	<h1 class="h1"> Remote Door Lock </h1>
+	</div>
+
+	<div class="container">
+	<form class="form-horizontal" role="form" action="{{url_for('Check')}}" method="post">
+		<div class="form-group">
+			<div class="col-sm-3">
+			<input type="text" class="form-control input-sm" placeholder="ID" name="id">
+			<input type="password" class="form-control input-sm" placeholder="PASSWORD" name="passwd">
+			</div>
+			<input type="submit" class="btn btn-primary" value="Sign in">
+		</div>
+	</form>
+	</div>
+	{% endblock %}
+
+	{% endblock %}
+</body>
+</html>

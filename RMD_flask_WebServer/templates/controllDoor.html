@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Door Control{% endblock %}
+{% block head %}
+	{{super()}}
+{% endblock %}
+{% block body %}
+	{% block adminNav %}
+		{{super()}}
+	{% endblock %}
+	<div class="container">
+	<h1 class="h1">Door View</h1>
+	<img class="image" src='{{url+"/?action=stream"}}'><br>
+	</div>
+	<div class="container">
+	<button type="button" class="btn btn-primary" onclick="location.href='{{url_for('Web_doorSwitch')}}'">Door Switch</button>
+	</div>
+{% endblock %}

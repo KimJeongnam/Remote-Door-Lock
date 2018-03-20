@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/jeongnam/AndroidStudioProjects/RemoteDoorLock_version10/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v25/values-v25.xml",
+            "map": [
+                {
+                    "source": "/home/jeongnam/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/55f9586ba3147941e0f66cc12d90e224/res/values-v25/values-v25.xml",
+                    "from": {
+                        "startLines": "2,3,4,6",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,126,209,308",
+                        "endLines": "2,3,5,7",
+                        "endColumns": "70,82,12,12",
+                        "endOffsets": "121,204,303,414"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/jeongnam/J_DATA/AndroidStudioProjects/RemoteDoorLock_version10/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v25/values-v25.xml",
+            "map": [
+                {
+                    "source": "/home/jeongnam/J_DATA/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/8c0d8bfc28ec95f76238a681b1b77048/res/values-v25/values-v25.xml",
+                    "from": {
+                        "startLines": "2,3,4,6",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,126,209,308",
+                        "endLines": "2,3,5,7",
+                        "endColumns": "70,82,12,12",
+                        "endOffsets": "121,204,303,414"
+                    }
+                }
+            ]
+        }
+    ]
+}

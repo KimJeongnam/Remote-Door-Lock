@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block head %}
+<meta charset="UTF-8">
+<title>insert member-RMD</title>
+	<!-- bootstrap JS -->
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    
+    <!-- bootstrap CSS -->
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+	<script src="//code.jquery.com/jquery.min.js"></script>
+	<script>
+	$(function() {
+	    $("#btn-del-post").click(function() {
+	         document.delbutton.id.value = $("input[name=radio_id]:checked").val();
+	         document.delbutton.submit();
+	    });
+	});
+
+	function alert_msg(message){
+		alert(message)
+	}
+	function backTopage(){
+		history.go(-1)();
+	}
+	</script>
+{% endblock %}
+{% block body %}
+	{% block adminNav %}
+		{{super()}}
+	{% endblock %}
+	{% if status == "Success" %}
+	<script>
+		alert_msg("Success")
+		backTopage()
+	</script>
+	{% endif %}
+
+	<div class="container">	
+	<br><button class="btn btn-primary" onclick="location.href='Insert_Member_submit'">Sign up</button><br>
+	<table id="example-table-2" width="100%" class="table table-bordered table-hover text-center">
+		<tr>
+			<th>Select</th>
+			<th>No.</th>
+			<th>Id</th>
+			<th>Name</th>
+		</tr>
+	{% for row in rows %}
+		<tr>
+			{% if loop.index == 1 %}
+			<td><input type="radio" name="radio_id"  value={{row[0]}} checked='checked'/></td>
+			{% else %}
+			<td><input type="radio" name="radio_id"  value={{row[0]}}></td>
+			{% endif %}
+			<td>{{loop.index}}</td>
+			<td>{{row[0]}}</td>
+			{% if row[1] == None %}
+			<td> </td>
+			{% else %}
+			<td>{{row[1]}}</td>
+			{% endif %}
+		</tr>
+	{% endfor %}
+	<!-- {{url_for('Member_delete')}} -->
+	</table>
+	<form name="delbutton" id="delbutton" action="{{url_for('Member_delete')}}" method="POST">	
+	<input type="hidden" name="id" value="">
+	<input id="btn-del-post" class="btn btn-primary" type="button" value="Delete Member"/>
+	</form>
+	</div>
+{% endblock %} 
