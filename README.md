@@ -4,8 +4,6 @@ preview
 
 https://blog.naver.com/qwjdskap/221147168781
 
-위 블로그에서 왼쪽 카테고리의 Project 에 있습니다.
-
 
 # Explanation
 
